@@ -1,0 +1,612 @@
+/*
+Theme Name: Treasure Park City
+Description: Custom Treasure Park City theme
+Author: Dan Telschow
+Version: 1
+*/
+
+/*
+***********************************
+* RESET STYLES
+***********************************
+*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{
+	font-size:100%;
+	/*font:inherit;*/
+	padding:0;
+	border:0;
+	margin:0;
+	vertical-align:baseline;
+}
+body{
+	line-height: 1;
+	background-image: url('img/web_background.jpg');
+}
+ol,ul{
+	list-style:none
+}
+blockquote,q{
+	quotes:none
+}
+blockquote:before,blockquote:after,q:before,q:after{
+	content:'';
+	content:none
+}
+table{
+	border-collapse:collapse; border-spacing:0
+}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
+	display:block
+}
+.clear{clear:both}
+.sticky{}.bypostauthor{}.wp-caption{}.wp-caption-text{}.gallery-caption{}.alignright{}.alignleft{}.aligncenter{}
+
+/*
+***********************************
+* STYLES FOR CUSTOM THEME
+***********************************
+*/
+
+/*  BODY
+**********************/
+#wrapper {
+	width: 1280px;
+	margin: 0 auto;
+}
+
+/*  HEADER
+**********************/
+#header-logo {
+	position: relative;
+	left: 0px;
+	top: 0px;
+}
+
+#header_top {
+	width: 100%;
+	height: 185px;
+    background-color: #3068a6;
+	/*
+    background-image: url('img/header_top.png');
+	background-repeat: repeat-x;
+    */
+	position: relative;
+}
+
+#header_top a {
+	color: white;
+	font-size: 16px;
+	font-family: Trebuchet MS;
+	font-weight: 500;
+	text-decoration: none;
+	letter-spacing: 0.1em;
+}
+
+#header_title {
+    color: white;
+    font-family: Lucida Sans Unicode;
+    font-size: 24pt;
+    position: absolute;
+    width: 482px;
+    right: 157px;
+    top: 35px;
+}
+
+#header_subtitle {
+    color: white;
+    font-family: Lucida Sans Unicode;
+    font-size: 12pt;
+    position: absolute;
+    width: 250px;
+    right: 164px;
+    top: 74px;
+}
+
+.main-navigation {
+	display: inline-block;
+	position: relative;
+	top: 25px;
+	left: 172px;
+}
+
+.main-navigation li {
+	display: inline;
+	margin: 0 18px 0 0;
+	position: relative;
+}
+
+.main-navigation li a {
+	border-bottom: 0;
+	line-height: 3;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+
+.main-navigation .current_page_item > a, .main-navigation .current_page_ancestor > a {
+	color: white;
+	font-weight: bold;
+}
+
+.main-navigation div.nav-menu > ul {
+	border-bottom: 0px solid #ededed;
+	border-top: 0px solid #ededed;
+	display: inline-block !important;
+	text-align: left;
+	width: 100%;
+}
+
+.menu-divider {
+	color: white;
+}
+
+li.menu-divider:last-child { display:none; }
+
+
+#social-img {
+    position: absolute;
+    float: right;
+    top: 95px;
+    right: 27px;
+}
+
+#social-map area:hover {
+	border: 1px solid blue;
+}
+
+#resident_login_link {
+	position: absolute;
+	top: 13px;
+	right: 16px;
+}
+
+/*  HEADER MOUNTAIN
+*************************/
+#header-mountain {
+	color: white;
+	background-color: black;
+	opacity: 0.75;	
+	filter: alpha(opacity=75);
+}
+
+#header-mountain table {
+	width: 100%;
+}
+
+#header-mountain td {
+	vertical-align: middle;
+	text-align: center;
+	white-space: nowrap;
+	height: 18px; 
+	padding: 5px 20px 5px 10px;
+}
+
+#header-mountain td.mountain-header {
+	font-weight: bold;
+	border-top: 1px solid white;
+	border-right: 1px solid white;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#header-mountain td.mountain-section {
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+}
+
+#header-mountain td.mountain-data {
+	font-style: italic;
+}
+
+/*  HEADER SLIDESHOW
+*************************/
+.header-slideshow {
+	border: 1px solid #333333;
+	position:relative;
+}
+
+#slides img.slidesjs-previous {
+	position: absolute;
+	left: 0px;
+	top: 205px;
+	z-index: 100;
+}
+
+#slides img.slidesjs-next {
+	position: absolute;
+	right: 0px;
+	top: 205px;
+	z-index: 100;
+}
+
+/*  FOOTER
+*************************/
+#footer {
+	position: relative;
+	width: 1280px;
+	height: 330px;
+	background-image:url("img/footer.png");
+	font-family: Trebuchet MS;
+	color: white;
+	font-size: 14px;
+	line-height: 1.5;
+	text-decoration: none;
+}
+
+#footer .footer-link {
+	border: 0px solid blue;
+	display: block;
+}
+
+#footer-facebook { position: absolute; top: 45px; left: 945px; height: 35px; width: 30px; }
+#footer-twitter { position: absolute; top: 45px; left: 981px; height: 35px; width: 36px; }
+
+#footer-email { position: absolute; top: 45px; left: 1016px; height: 35px; width: 36px; }
+#footer-map { position: absolute; top: 211px; left: 694px; height: 44px; width: 93px; }
+#footer-contact { position: absolute; top: 45px; left: 700px; height: 33px; width: 180px; }
+#footer-home { position: absolute; top: 38px; left: 149px; height: 205px; width: 395px;}
+
+#footer-phone-numbers {
+	position: absolute;
+	left: 715px;
+	top: 113px;
+}
+
+#footer-phone-numbers a {
+	font-family: Trebuchet MS;
+	color: white;
+	font-size: 14px;
+	line-height: 1.5;
+	text-decoration: none;	
+} 
+
+#footer-address {
+	position: absolute;
+	left: 895px;
+	top: 113px;
+}
+
+/*  Image Sections
+****************************/
+.gallery-sample-container {
+	font-family: Trebuchet MS;
+	font-size: 18px;
+	color: white;
+	display: block;
+	margin: 10px auto 10px auto;
+	width: 1100px;
+	white-space: nowrap;
+}
+.gallery-sample-container img {
+}
+
+.gallery-thumb {
+	-moz-box-shadow: 2px 2px 3px #aaa;
+	-webkit-box-shadow: 2px 2px 3px #aaa;
+	box-shadow: 2px 2px 3px #aaa;
+	/* For IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#aaaaaa')";
+	/* For IE 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#aaaaaa');
+	border: 3px solid #FFFFFF;
+}
+
+.gallery-sample-container hr {
+	margin-bottom: 0px;
+}
+.gallery-sample-header { 
+	float: left;
+	padding: 6px 16px 6px 16px;
+	background-color: #6a614e; 
+}
+.gallery-sample-more { 
+	margin-top: 6px;
+	margin-right: 0px;
+	margin-bottom: 2px;
+	padding: 0px 9px 6px 9px;
+	float: right;
+	background-color: #6a614e; 
+}
+.gallery-sample-more a {
+	text-decoration: none;
+	color: white;
+	font-family: Trebuchet MS;
+	font-size: 12px;
+}
+.gallery-sample-hr {
+	margin-right: 0px;
+	margin-top: 0px;
+	clear: both;
+}
+.gallery-item {
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	width: 33%;
+}
+.gallery-item-left {
+	text-align: left !important;
+}
+.gallery-item-right {
+	text-align: right !important;
+}
+
+.gallery-thumbnail-rollover { display: block; 
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 306px;
+	width: 306px;
+ }
+
+ .gallery-thumbnail-rollover-background {
+ 	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 306px;
+	width: 306px;
+ 	background-color: black;
+	filter: alpha(opacity=75);
+	opacity: 0.75;	
+ }
+
+.gallery-thumbnail-rollover-title {
+	position: absolute;
+	top: 60px;
+	left: 40px;
+	color: #ffffff;
+	filter: alpha(opacity=100);
+	opacity: 1;
+	text-align: left !important;
+}
+.gallery-thumbnail-rollover-desc {
+	position: absolute;
+	top: 100px;
+	left: 40px;
+	color: #999999;
+	filter: alpha(opacity=100);
+	opacity: 1;
+	width: 228px;
+	height: 100px;
+	white-space: normal;
+	font-size: 16px;
+	line-height: 1.2;
+	text-align: left !important;
+}
+.gallery-thumbnail-rollover-link {
+	margin-left: 40px;
+	color: #ffffff;
+	filter: alpha(opacity=100);
+	opacity: 1;
+	text-align: left !important;
+	bottom: 50px;
+	position: absolute;
+	right: 24px;
+	font-size: 16px;
+}
+
+.galleria { 
+	width: 1100px; height: 600px; background: #ffffff; margin: 0px auto 10px auto;
+}
+
+/* Sidebar styles
+******************************/
+#sidebar {
+	width: 282px;
+	float: right;
+}
+
+#sidebar #links {
+	text-align: right;
+	margin-bottom: 40px;
+}
+
+#sidebar #links a {
+	font-family: Trebuchet MS;
+	display: block;
+	line-height: 1.5;
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+}
+
+#sidebar .sidebar-section#newsletter {}
+#sidebar .sidebar-section#newsletter a{
+	color: black;
+	text-decoration: none;
+}
+#sidebar .sidebar-section#events {}
+#sidebar .sidebar-section#events a {
+	color: black;
+	text-decoration: none;
+}
+
+#sidebar .sidebar-section {
+	margin-bottom: 40px;
+}
+#sidebar .sidebar-section  .sidebar-section-title {
+	text-align: center;
+	color: white;
+	font-size: 20px;
+	background-color: #6a614e;
+	padding: 5px 0px 4px 0px;
+}
+#sidebar .sidebar-section .sidebar-section-body {
+	text-align: justify;
+	font-family: Trebuchet MS;
+	line-height: 1.2;
+	text-decoration: none;
+	color: black;
+	font-size: 14px;
+}
+
+#sidebar #gallery-thumbs img {
+	margin-bottom: 15px;
+	height: 275px;
+	width: 275px;
+}
+
+#sidebar .sidebar_contact_box { border: 0px solid black; margin: 0px 10px; padding: 10px 0px; font-family: "Times New Roman",Georgia,Serif; }
+#sidebar .sidebar_contact_subheader { font-size: 22px; color: #6289A3; font-family: "Times New Roman",Georgia,Serif; }
+#sidebar .sidebar_contact_description { margin: 7px 0px 13px 0px; font-family: Trebuchet MS; font-size: 14px;}
+#sidebar .sidebar_contact_label { font-family: Trebuchet MS; font-size: 13px; }
+#sidebar .sidebar_contact_field input { width: 255px; margin-bottom: 10px; }
+#sidebar .sidebar_contact_submit { background-color: #6a614e; color: white; padding: 5px 14px; font-size: 14px; border-width: 0px; }
+
+#sidebar .sidebar_newsletter_box { border: 0px solid black; margin: 0px 10px; padding: 10px 0px; font-family: "Times New Roman",Georgia,Serif; }
+#sidebar .sidebar_newsletter_subheader { font-size: 22px; color: #6289A3; font-family: "Times New Roman",Georgia,Serif; }
+#sidebar .sidebar_newsletter_description { margin: 7px 0px 13px 0px; font-family: Trebuchet MS; font-size: 14px;}
+#sidebar .sidebar_newsletter_label { font-family: Trebuchet MS; font-size: 13px; }
+#sidebar .sidebar_newsletter_field input { width: 255px; margin-bottom: 10px; }
+#sidebar .sidebar_newsletter_submit { background-color: #6a614e; color: white; padding: 5px 14px; font-size: 14px; border-width: 0px; }
+
+
+/* Standard Template Styles
+******************************/
+#standard-template-body {
+	margin: 40px auto 20px auto;
+	width: 1100px;
+}
+#standard-template-body #content {
+	width: 780px;
+	float: left;
+}
+
+/* Contact Template Styles
+******************************/
+#contact-template-body {
+	margin: 40px auto 20px auto;
+	width: 1100px;
+}
+#contact-template-body #content {
+	width: 1100px;
+}
+
+#contact-template-body #contact-form {
+	float: left;
+	width: 780px;
+	font-family: Trebuchet MS;
+	display: block;
+	line-height: 1.5;
+	text-decoration: none;
+	color: black;
+	font-size: 25px;
+}
+#contact-template-body #contact-form #name {
+	height: 30px;
+	width: 363px;
+	font-size: 20px;
+	padding-left: 10px;
+	border: 1px solid #aaaaaa;
+	margin-bottom: 25px;
+}
+#contact-template-body #contact-form #message{
+	font-family: Trebuchet MS;
+	font-size: 23px;
+	height: 330px;
+	width: 775px;
+	padding-left: 10px;
+	padding-top: 10px;
+	border: 1px solid #aaaaaa;
+}
+#contact-template-body #contact-form #submit{
+	background-color: #6a614e;
+	color: white;
+	padding: 10px 20px;
+	font-size: 16px;
+	border-width: 0px;
+}
+
+.required_symbol {
+	color: #ff0000;
+}
+
+/* Page sections
+*****************************/
+.page-section {
+	font-family: Trebuchet MS;
+	font-size: 16px;
+	margin-bottom: 40px;
+	text-align: justify;
+	line-height: 22px;
+}
+	
+.page-section-header {
+	font-family: Trebuchet MS;
+	float: left;
+	padding: 6px 16px 6px 16px;
+	background-color: #6a614e;
+	color: white;
+	margin-bottom: 2px;
+}
+
+.page-header {
+	font-family: Trebuchet MS;
+	font-size: 24px;
+	float: left;
+	padding: 6px 16px 6px 16px;
+	background-color: #6a614e;
+	color: white;
+	margin-bottom: 2px;
+	min-width: 300px;
+}
+
+/* Event Section
+**************************/
+.event-section {
+	margin-top: 20px;
+}
+
+.event-section .event-section-header {
+	text-align: center; 
+	color: white; 
+	font-size: 20px; 
+	background-color: #000000; 
+	padding: 5px 0px 4px 0px; 
+	width: 250px;
+}
+	    	
+.event-section .event-date {
+	width: 125px; 
+	text-align: center; 
+	height: 60px; 
+	margin-right: 6px; 
+	font-family: Trebuchet MS; 
+	float: left; 
+	padding: 6px 0px 6px 0px; 
+	background-color: #6a614e; 
+	color: white; 
+	margin-bottom: 2px; 
+	font-size: 55px;
+	font-weight:bold;
+}
+			
+.event-section .ord-suffix {
+	font-size: 30px; 
+	vertical-align: top; 
+	line-height: 1.3;
+}
+
+.event-section .content {
+	padding-top: 3px; 
+	font-family: Trebuchet MS; 
+	font-size: 18px; 
+	margin-bottom: 40px; 
+	text-align: justify;
+}
+
+.home_textblock {
+	width: 750px; 
+	margin: 30px auto 20px auto;
+	float: left;
+}
+
+.home_sidebar {
+	padding-top: 82px;
+	float:right;
+}
+
+.home_top_block {
+	display: block;
+	margin: 10px auto 10px auto;
+	width: 1100px;
+}
