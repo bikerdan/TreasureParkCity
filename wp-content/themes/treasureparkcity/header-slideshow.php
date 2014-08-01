@@ -19,10 +19,8 @@
 						}
 					} else {
 						?>
-							<img src="/wp-content/themes/treasureparkcity/img/example-slide-1.jpg">
-                            <img src="/wp-content/themes/treasureparkcity/img/example-slide-2.jpg">
-							<img src="/wp-content/themes/treasureparkcity/img/example-slide-3.jpg">
-							<img src="/wp-content/themes/treasureparkcity/img/example-slide-4.jpg">
+							<img src="/wp-content/themes/treasureparkcity/img/example-slide-1.png">
+                            <img src="/wp-content/themes/treasureparkcity/img/example-slide-1.png">
 						<?php
 					}
 					/*
@@ -35,7 +33,7 @@
 		<script>
 			$(function() {
 				$('#slides').slidesjs({
-					width: 940, height: 400,
+					width: 940, height: 280,
 					navigation: {
 						active: false,
 						effect: "slide"

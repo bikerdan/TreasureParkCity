@@ -19,6 +19,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	vertical-align:baseline;
 }
 body{
+    font-family: Geneva, Arial, Helvetica, sans-serif;
 	line-height: 1;
 	background-image: url('img/web_background.jpg');
 }
@@ -207,14 +208,14 @@ li.menu-divider:last-child { display:none; }
 #slides img.slidesjs-previous {
 	position: absolute;
 	left: 0px;
-	top: 205px;
+	top: 135px;
 	z-index: 100;
 }
 
 #slides img.slidesjs-next {
 	position: absolute;
 	right: 0px;
-	top: 205px;
+	top: 135px;
 	z-index: 100;
 }
 
@@ -592,6 +593,19 @@ li.menu-divider:last-child { display:none; }
 	font-size: 18px; 
 	margin-bottom: 40px; 
 	text-align: justify;
+}
+
+/* HOME Styles
+*******************************/
+.style8 {
+    font-size: 12px;
+}
+
+.style9 {
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+    color: #7E7664;
 }
 
 .home_textblock {
