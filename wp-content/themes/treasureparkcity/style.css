@@ -66,7 +66,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
 #header_top {
 	width: 100%;
 	height: 185px;
-    background-color: #3068a6;
+    background-color: #3369A4;
 	/*
     background-image: url('img/header_top.png');
 	background-repeat: repeat-x;
@@ -224,9 +224,12 @@ li.menu-divider:last-child { display:none; }
 #footer {
 	position: relative;
 	width: 1280px;
-	height: 330px;
-	background-image:url("img/footer.png");
-	font-family: Trebuchet MS;
+	height: 175px;
+    background-color: #3369A4;
+	background-image:url("img/footer_logo.png");
+    background-repeat: no-repeat;
+    background-position: 20px 5px;
+    font-family: Trebuchet MS;
 	color: white;
 	font-size: 14px;
 	line-height: 1.5;
@@ -238,6 +241,18 @@ li.menu-divider:last-child { display:none; }
 	display: block;
 }
 
+#footer-social-links {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+#footer-info {
+    position: absolute;
+    right: 302px;
+    top: 10px;
+}
+
 #footer-facebook { position: absolute; top: 45px; left: 945px; height: 35px; width: 30px; }
 #footer-twitter { position: absolute; top: 45px; left: 981px; height: 35px; width: 36px; }
 
@@ -245,26 +260,6 @@ li.menu-divider:last-child { display:none; }
 #footer-map { position: absolute; top: 211px; left: 694px; height: 44px; width: 93px; }
 #footer-contact { position: absolute; top: 45px; left: 700px; height: 33px; width: 180px; }
 #footer-home { position: absolute; top: 38px; left: 149px; height: 205px; width: 395px;}
-
-#footer-phone-numbers {
-	position: absolute;
-	left: 715px;
-	top: 113px;
-}
-
-#footer-phone-numbers a {
-	font-family: Trebuchet MS;
-	color: white;
-	font-size: 14px;
-	line-height: 1.5;
-	text-decoration: none;	
-} 
-
-#footer-address {
-	position: absolute;
-	left: 895px;
-	top: 113px;
-}
 
 /*  Image Sections
 ****************************/
@@ -396,6 +391,20 @@ li.menu-divider:last-child { display:none; }
 	float: right;
 }
 
+.sidebar-item {
+    height: 200px;
+}
+
+.sidebar-item-header {
+    height: 35px;
+    width: 100%;
+    background-color: #3369A4;
+    text-align: center;
+    line-height: 2.25;
+    margin-bottom: 5px;
+    color: white;
+}
+
 #sidebar #links {
 	text-align: right;
 	margin-bottom: 40px;
@@ -464,12 +473,25 @@ li.menu-divider:last-child { display:none; }
 /* Standard Template Styles
 ******************************/
 #standard-template-body {
-	margin: 40px auto 20px auto;
-	width: 1100px;
+	width: 1280px;
+    position: relative;
+    background-color: #FFF1D0;
+    padding-top: 30px;
 }
+
 #standard-template-body #content {
-	width: 780px;
-	float: left;
+    width: 1000px;
+    position: relative;
+    left: 0px;
+    border-right: 2px solid #3369A4;
+}
+
+#standard-template-body #sidebar {
+    width: 260px;
+    position: absolute;
+    right: 10px;
+    top: 30px;
+    padding-left: 20px;
 }
 
 /* Contact Template Styles
