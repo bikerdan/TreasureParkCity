@@ -3,7 +3,7 @@
 Template Name: Contact
 */
 ?>
-<?
+<?php
 	// HANDLE FORM SUBMISSION
 	if (!empty($_REQUEST['dv_submit'])){
 		$to = 'test@treasureparkcity.com';
@@ -56,7 +56,7 @@ Template Name: Contact
 	</article>
 </div>
 <script>
-	var dv_message = '<? echo $dv_message ?>';
+	var dv_message = '<?php echo $dv_message ?>';
 	if (dv_message) {
 		alert(dv_message);
 	}

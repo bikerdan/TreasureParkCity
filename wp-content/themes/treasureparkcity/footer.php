@@ -10,6 +10,7 @@
 		</div>
 		<?php wp_footer(); ?>
 	</div><!-- #wrapper -->
+    <script src="<?php echo blankslate_relative_path("bootstrap/js/bootstrap.min.js"); ?>"></script>
 </body>
 
 </html>
