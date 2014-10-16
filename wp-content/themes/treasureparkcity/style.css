@@ -671,7 +671,7 @@ li.menu-divider:last-child { display:none; }
 
 .search-results-box {
     padding: 10px;
-    height: 400px;
+    min-height: 400px;
 }
 
 .search-btn {
