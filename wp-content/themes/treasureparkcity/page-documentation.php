@@ -72,7 +72,7 @@ Template Name: Documentation
                                     </button>
                                     <ul class="dropdown-menu" role="menu">
                                         <?php
-                                        $item = '<li role="presentation"><a role="menuitem" target="_blank" href="/wp-content/docs/%s">%s</a></li>';
+                                        $item = '<li role="presentation"><a role="menuitem" target="_blank" href="/wp-content/docs/subdocs/%s">%s</a></li>';
                                         foreach ($visual as $k => $record) {
                                             printf($item, $record->file_name, $record->title);
                                         }
@@ -87,7 +87,7 @@ Template Name: Documentation
                                     </button>
                                     <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
                                         <?php
-                                        $item = '<li role="presentation"><a role="menuitem" target="_blank" href="/wp-content/docs/%s">%s</a></li>';
+                                        $item = '<li role="presentation"><a role="menuitem" target="_blank" href="/wp-content/docs/subdocs/%s">%s</a></li>';
                                         foreach ($engineering as $k => $record) {
                                             printf($item, $record->file_name, $record->title);
                                         }
@@ -106,7 +106,7 @@ Template Name: Documentation
                                     </button>
                                     <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
                                         <?php
-                                        $item = '<li role="presentation"><a role="menuitem" target="_blank" href="/wp-content/docs/%s">%s</a></li>';
+                                        $item = '<li role="presentation"><a role="menuitem" target="_blank" href="/wp-content/docs/subdocs/%s">%s</a></li>';
                                         foreach ($architectural as $k => $record) {
                                             printf($item, $record->file_name, $record->title);
                                         }
@@ -121,7 +121,7 @@ Template Name: Documentation
                                     </button>
                                     <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
                                         <?php
-                                        $item = '<li role="presentation"><a role="menuitem" target="_blank" href="/wp-content/docs/%s">%s</a></li>';
+                                        $item = '<li role="presentation"><a role="menuitem" target="_blank" href="/wp-content/docs/subdocs/%s">%s</a></li>';
                                         foreach ($appendices as $k => $record) {
                                             printf($item, $record->file_name, $record->title);
                                         }
@@ -139,7 +139,7 @@ Template Name: Documentation
                     ?>
                         <ul>
                             <?php
-                            $item = '<li role="presentation" class="search-result-li"><a role="menuitem" target="_blank" href="/wp-content/docs/%s">%s</a></li>';
+                            $item = '<li role="presentation" class="search-result-li"><a role="menuitem" target="_blank" href="/wp-content/docs/subdocs/%s">%s</a></li>';
                             foreach ($search_result as $k => $record) {
                                 printf($item, $record->file_name, $record->title);
                             }
@@ -148,7 +148,7 @@ Template Name: Documentation
                         <!-- <table class="search-result-table">
                             <tr><td>File Name</td></tr>
                             <?php
-                            // $item = '<tr><td><a role="menuitem" target="_blank" href="/wp-content/docs/%s">%s</a></td></tr>';
+                            // $item = '<tr><td><a role="menuitem" target="_blank" href="/wp-content/docs/subdocs/%s">%s</a></td></tr>';
                             // foreach ($search_result as $k => $record) {
                             //     printf($item, $record->file_name, $record->title);
                             // }
