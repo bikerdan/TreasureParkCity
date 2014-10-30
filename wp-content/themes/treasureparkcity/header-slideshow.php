@@ -20,7 +20,7 @@
 					} else {
 						?>
 							<img src="/wp-content/themes/treasureparkcity/img/example-slide-1.png">
-                            <img src="/wp-content/themes/treasureparkcity/img/example-slide-1.png">
+                            <img src="/wp-content/themes/treasureparkcity/img/example-slide-2.png">
 						<?php
 					}
 					/*

@@ -18,7 +18,7 @@
 				$email = $_REQUEST['email'];
 				$headers = array(
 					"From: $name <$email>",
-					"Cc: jbennett@tresureparkcity.com"
+					"Cc: mike@tresureparkcity.com"
 				);
 				$message = <<<MESSAGE
 					Newsletter request form submission:\n
